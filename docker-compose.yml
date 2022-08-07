@@ -4,4 +4,4 @@ services:
     environment:
       INFLUX_TOKEN: ${INFLUX_TOKEN_CLOUD}
     volumes:
-    - ./telegraf-data/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
