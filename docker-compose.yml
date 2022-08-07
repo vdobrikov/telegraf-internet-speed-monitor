@@ -1,0 +1,7 @@
+services:
+  telegraf:
+    image: telegraf:1.23
+    environment:
+      INFLUX_TOKEN: ${INFLUX_TOKEN_CLOUD}
+    volumes:
+    - ./telegraf-data/telegraf.conf:/etc/telegraf/telegraf.conf:ro
