@@ -5,3 +5,4 @@ services:
       INFLUX_TOKEN: ${INFLUX_TOKEN_CLOUD}
     volumes:
     - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    restart: unless-stopped
