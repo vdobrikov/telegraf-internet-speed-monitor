@@ -22,12 +22,12 @@ INFLUX_TOKEN=XZP...Xe
 8. Download the file via link from second configuration: `telegraf --config https://eu-central-1-1.aws.cloud2.influxdata.com/api/v2/telegrafs/09...0`
 9. Rename dowloaded file to `telegraf.conf` and copy it to project root folder
 10. Modify `telegraf.conf` if needed
-11. The final folder structure should be as following:
+11. The final folder structure should be as following (except misc files like readme, etc):
 ```
 .
-├── README.md
 ├── docker-compose.yml
-└── telegraf.conf
+├── telegraf.conf
+└── .env
 ```
 12. Start Telegraf with following command
 ```
